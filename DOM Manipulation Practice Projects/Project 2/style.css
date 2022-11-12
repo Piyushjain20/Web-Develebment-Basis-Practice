@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Adams_The_Tetons_and_the_Snake_River.jpg/1280px-Adams_The_Tetons_and_the_Snake_River.jpg);
+    background-color: black;
+    background-size: cover;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    position: relative;
+    
+}
+.modal-btn{
+    color: white;
+    background: transparent;
+    border: solid 2px white;
+    border-radius: 5px;
+    font-size: 1.5rem ;
+    padding: 10px;
+    position: absolute;
+    top:80%;
+    left: 10%;
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: .5s;
+}
+.modal-btn:hover{
+    background-color: white;
+    color: black;
+}
+.close-btn{
+    border: none;
+    background: transparent;
+}
+.modal-back{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+}
+.modal-div{
+    position: absolute;
+    background-color: white;
+    padding: 35px 15px;
+    width: 32%;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 15px;
+    top:40%;
+    left:40%;
+    transition: translate(-40%,-40%);
+    animation: modal-animation;
+    animation-duration: .8s;
+}
+i{
+    margin-left: 5px;
+    display: inline;
+    transform: scale(1.6);
+    cursor: pointer;
+}
+@keyframes modal-animation{
+    from{
+        top:-300px;
+        opacity: 0;
+    }
+    to{
+        top:40%;
+        opacity: 1;
+    }
+}
