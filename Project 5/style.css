@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url(https://wallpaperaccess.com/full/1489448.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.task-adder{
+    background-color:#402E24 ;
+    border-radius: 15px;
+    padding: 20px 30px;
+    text-align: center;
+    margin: 0 auto 30px;
+}
+.heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    color: #F2F2F2;
+}
+input{
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin-right: 15px;
+}
+button{
+    background-color: #F2F2F2;
+    color: #402E24;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+.new-task{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.task{  
+    background-color: #402E24; ;
+    color: #F2F2F2;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin: 20px auto 0;
+    font-family: 'Kalam',cursive;
+}
+.checked{
+    text-decoration:line-through;
+}
+
+.fa-solid{
+    padding: 5px;
+    text-decoration:none;
+    cursor: pointer;
+    transition: .2s;
+}
+.fa-solid:hover{
+    color: #F2AF88;
+    transform: scale(1.05);
+}
+button:hover{
+    background-color: #F2AF88;
+    transform: scale(1.05);
+    color: #402E24;
+}
+.icon{
+    margin-left: 20px;
+}
