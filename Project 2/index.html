@@ -7,9 +7,11 @@
     <!-- CSS StyleSheet -->
     <link rel="stylesheet" href="style.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
     />
     <!-- Font Awesome -->
     <link
@@ -19,23 +21,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>To Do List</title>
+    <title>Modal Functionality</title>
   </head>
   <body>
-    <div class="container">
-      <div class="task-adder">
-        <h2 class="heading">Task Planner</h2>
-          <input
-            type="text"
-            name="task"
-            id="task-input"
-            placeholder="Enter Task...."
-          />
-          <button type="submit" >Add Task</button>
-      </div>
-      <div class="new-task">
+    <div class="modal-back">
+      <div class="modal-div">
+        <span class="model-text">
+            Click on cross mark or anywhere in window
+        </span>
+        <button class="close-btn">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </button>
       </div>
     </div>
-    <script src="script.js"></script>
+    <button class="modal-btn">Where's our Modal?</button>
+    <script src="./script.js"></script>
   </body>
 </html>
+

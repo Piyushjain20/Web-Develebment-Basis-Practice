@@ -1,18 +1,3 @@
-// let checkBtn = document.querySelectorAll('.fa-circle-check');
-// let deleteBtn = document.querySelectorAll('.fa-trash');
-// checkBtn.forEach((e) => {
-//     e.addEventListener('click',function(){
-//         let span = e.previousElementSibling;
-//         span.classList.toggle('checked');
-//     });
-// });
-// deleteBtn.forEach((e) => {
-//     e.addEventListener('click',function(){
-//         let task = e.parentElement;
-//         console.log(task);
-//         task.parentElement.removeChild(task);
-//     });
-// });
 // let taskString ='';
 // document.addEventListener('input',function(e){
 //     taskString = taskString.concat(e.target.value);
@@ -20,28 +5,28 @@
 // });
 
 let inputEle = document.querySelector('input');
-
-
 let addBtn = document.querySelector('button');
 addBtn.addEventListener('click',function(occuredEvent){
-    // occuredEvent.preventDefault();
-    addTask(inputEle.value);
-    let checkBtn = document.querySelectorAll('.fa-circle-check');
-    let deleteBtn = document.querySelectorAll('.fa-trash');
-    checkBtn.forEach((e) => {
-        e.addEventListener('click',function(){
-            let span = e.previousElementSibling;
-            span.classList.toggle('checked');
-        });
+    // occuredEvent.preventDefault(); Can be used for stoping event propogation 
+    // example : when stoping the functionality of form submit in conjection with synthetic events.
+    let newTask = document.createElement('div');
+    newTask.className='task';
+    newTask.innerHTML='<span>'+inputEle.value+'</span>';
+    let checkBtn = document.createElement('i');
+    checkBtn.className='fa-solid fa-circle-check icon';
+    checkBtn.addEventListener('click',function(){
+        let span = checkBtn.previousElementSibling;
+        span.classList.toggle('checked');
     });
-    deleteBtn.forEach((e) => {
-        e.addEventListener('click',function(){
-            let task = e.parentElement;
-            console.log(task);
-            task.parentElement.removeChild(task);
-        });
+    let deleteBtn = document.createElement('i');
+    deleteBtn.className="fa-solid fa-trash";
+    deleteBtn.addEventListener('click',function(){
+        let task = deleteBtn.parentElement;
+        task.parentElement.removeChild(task);
     });
-    // taskString='';
+    newTask.appendChild(checkBtn);
+    newTask.appendChild(deleteBtn);
+    document.querySelector('.new-task').appendChild(newTask);
 
 })
 function addTask(str){
