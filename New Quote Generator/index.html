@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote Generator</title>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="quote-container">
+        <i id="quote-svg" class="fa-solid fa-quote-left"></i>
+        <span id="quote"> </span>
+        <span id="author"></span>
+      </div>
+      <div class="bottom-container">
+        <button class="tweetBtn" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </button>
+        <button id="quoteBtn">New Quote</button>
+      </div>
+    </div>
+    <div class="loader"></div>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
