@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="image-container">
+        <img src="./images/photo1.avif" alt="Album Art" title="Album Art" id="image" />
+      </div>
+      <h2 id="title">Sunflower</h2>
+      <h3 id="artist">Post Malone</h3>
+      <audio src="./Music/music1.mp3" id="audio"></audio>
+
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <span id="duration">2:41</span>
+        </div>
+      </div>
+      <div class="controls">
+        <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+        <i class="fa-solid fa-play" id="mainBtn" title="Play"></i>
+        <i class="fa-solid fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

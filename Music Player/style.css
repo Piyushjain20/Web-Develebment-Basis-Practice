@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+h3,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #c9ced3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+}
+.main-container {
+  width: 400px;
+  aspect-ratio: 4/5;
+  background-color: #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+#image-container {
+  position: relative;
+  width: 75%;
+  aspect-ratio: 1;
+  top: -10%;
+  left: 12.5%;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.progress-container {
+  height: 4px;
+  border-radius: 15px;
+  width: 90%;
+  background: white;
+  margin: 30px auto;
+  cursor: pointer;
+}
+.progress {
+  height: 100%;
+  background-color: black;
+  border-radius: 15px;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+.duration-wrapper {
+  display: flex;
+  position: relative;
+  top: -25px;
+  justify-content: space-between;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-solid {
+  font-size: 30px;
+  color: rgb(129, 129, 129);
+  margin: 0 20px;
+  cursor: pointer;
+}
+.fa-solid:hover {
+  filter: brightness(80%);
+}
+#mainBtn {
+  font-size: 45px;
+}
+
+@media screen and (max-width: 400px) {
+  .main-container {
+    width: 95vw;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
