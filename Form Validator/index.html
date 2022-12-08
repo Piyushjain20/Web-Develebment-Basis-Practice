@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Sign Up Today!</h1>
+      <form id="form">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" title="Please fill in this feild" required placeholder="Full Name" minlength="3" maxlength="100" />
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" title="Please fill in this feild" required placeholder="+91-9999999999" pattern="\+[0-9]{2}-[0-9]{10}" />
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" title="Please fill in this feild" required placeholder="email@address.com" />
+        <label for="website">Website URL</label>
+        <input type="url" name="website" id="website" title="Please fill in this feild" required placeholder="http://google.com" />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          title="Please include atleast 1 uppercase character, 1 lowercase character and 1 number"
+          required
+          placeholder="Create Password (Min. 8 characters)"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
+        <label for="confirm-pass">Confirm Password</label>
+        <input type="password" id="confirm-pass" title="Please fill in this feild" required placeholder="Confirm Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" />
+        <button type="submit">Register</button>
+      </form>
+      <div class="output">Don't Hesitate!</div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

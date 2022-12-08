@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spock Rock Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="header">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+      </div>
+      <div class="player-container" id="player">
+        <h2>You - <span id="playerScore">0</span><span class="choice" id="playerChoice"></span></h2>
+        <div class="choice-wrapper" id="playerSelection">
+          <i class="fa-regular fa-hand-back-fist" title="Rock" id="playerRock"></i>
+          <i class="fa-regular fa-hand" title="Paper" id="playerPaper"></i>
+          <i class="fa-regular fa-hand-scissors" title="Scissors" id="playerScissors"></i>
+          <i class="fa-regular fa-hand-lizard" title="Lizard" id="playerLizard"></i>
+          <i class="fa-regular fa-hand-spock" title="Spock" id="playerSpock"></i>
+        </div>
+      </div>
+      <div class="player-container" id="computer">
+        <h2>Computer - <span id="computerScore">0</span><span class="choice" id="computerChoice"></span></h2>
+        <div class="choice-wrapper" id="computerSelection">
+          <i class="fa-regular fa-hand-back-fist" title="Rock" id="computerRock"></i>
+          <i class="fa-regular fa-hand" title="Paper" id="computerPaper"></i>
+          <i class="fa-regular fa-hand-scissors" title="Scissors" id="computerScissors"></i>
+          <i class="fa-regular fa-hand-lizard" title="Lizard" id="computerLizard"></i>
+          <i class="fa-regular fa-hand-spock" title="Spock" id="computerSpock"></i>
+        </div>
+      </div>
+      <i class="fa-solid fa-rotate reset-icon" title="Reset"></i>
+      <div class="result-container">
+        <h3 class="result-text" id="resultText">You Won!</h3>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
